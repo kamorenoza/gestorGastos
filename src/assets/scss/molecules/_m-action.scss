@@ -1,0 +1,55 @@
+.action {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  position: relative;
+
+  &__label {
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    min-width: 48px;
+  }
+
+  .button-action {
+    margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &--light {
+    width: 60px;
+    height: auto;
+
+    .action__label {
+      font-size: 0.8rem;
+      line-height: 0.8rem;
+    }
+
+    .button-action {
+      background-color: $white;
+      box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+      width: 40px;
+      height: 40px;
+      margin-bottom: 5px;
+      position: relative;
+      top: auto;
+      left: auto;
+
+      svg, i {
+        color: $black;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &--sm {
+    width: 15px;
+    height: 15px;
+
+    .button-action {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

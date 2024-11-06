@@ -1,0 +1,44 @@
+$font: 'Cerebri', serif;
+$fontBook: 'CerebriBook', serif;
+$fontBold: 'CerebriBold', serif;
+
+body {
+  font-family: $font;
+  background-color: $color-general;
+  min-width: 375px;
+  overflow-x: auto;
+  max-width: 800px;
+  margin: auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+.modal {
+  padding-left: 0 !important;
+
+  .modal-content {
+    border: none;
+    border-radius: 20px;
+    max-width: 90%;
+    margin: auto;
+
+    .modal-body {
+      padding: 20px;
+    }
+  }
+}
+
+.white-body {
+  background-color: $background-blue;
+
+  .button-menu svg {
+    color: $color-general;
+  }
+}
+
+:root {
+  --animate-delay: 0.5s;
+  --animate-duration: 0.5s;
+}

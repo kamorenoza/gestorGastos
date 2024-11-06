@@ -1,0 +1,44 @@
+.o-table {
+  box-shadow: 0;
+  overflow: hidden;
+  background-color: $white;
+  color: $black;
+
+  th {
+    border-top: 0;
+    background-color: $background-gray;
+    font-size: 0.9rem;
+    font-family: $fontBook;
+  }
+
+  .actions-column {
+    width: 130px;
+    padding-right: 0;
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+
+  tr {
+    td { border-top: 0; }
+  }
+
+  tr {
+    td:first-child {
+      width: 50px;
+    }
+
+    td {
+      vertical-align: middle;
+      font-size: 0.9rem;
+      line-height: 0.9rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .o-table {
+    .actions-column {
+      width: auto;
+    }
+  }
+}

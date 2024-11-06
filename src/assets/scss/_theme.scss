@@ -1,0 +1,190 @@
+/* Text */
+.main-title {
+  color: $white;
+  font-size: 1.3rem;
+  font-family: $fontBook;
+  width: max-content;
+}
+
+.title {
+  color: $black;
+  font-size: 1.1rem;
+  font-family: $fontBook;
+  width: max-content;
+}
+
+.gray-text {
+  color: $light-text;
+  font-size: 0.9rem;
+}
+
+.gray-sm-text {
+  color: $light-text;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.gray-xs-text {
+  color: $light-text;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+}
+
+label {
+  font-size: 0.8rem;
+  font-family: $fontBook;
+  margin-bottom: 5px;
+  line-height: 0.8rem;
+}
+
+.text-general {
+  color: $color-general;
+}
+
+.text-success {
+  color: $color-success;
+}
+
+.text-danger {
+  color: $color-danger;
+}
+
+.text-warn {
+  color: $color-warning;
+}
+
+.text-book {
+  font-family: $fontBook;
+}
+
+.text-tertiary {
+  color: $color-tertiary;
+}
+
+.text-medium {
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+}
+
+.text-sm {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.text-xs {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+}
+
+.text-capitalize {
+text-transform: capitalize;
+}
+
+.text-xxs {
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+}
+
+.text-big {
+  font-size: 1.2rem;
+}
+
+/* Inputs */
+.input-sm {
+  width: 62px;
+  padding: 5px 10px;
+  height: 28px;
+}
+
+/* Alert */
+.valid-alert {
+  min-height: 17px;
+  padding-top: 3px;
+
+  p {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+  }
+}
+
+.loading {
+  &:before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 999999;
+    background-image: url('@/assets/images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.dark-back {
+  &:before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: $black;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.swal2-container .swal2-popup {
+  border-radius: 20px;
+
+  .swal2-title {
+    color: $black;
+    padding-top: 20px;
+    font-size: 1rem;
+  }
+
+  .swal2-html-container {
+    font-size: 0.9rem;
+    color: $black;
+  }
+
+  .swal2-styled {
+    border-radius: 20px;
+    padding: 5px 15px 7px;
+    line-height: 1.2rem;
+    
+    &.swal2-confirm {
+      background-color: $color-success;
+    }
+  }
+}
+
+
+.b-form-datepicker {
+  border: none;
+
+  &.b-form-btn-label-control.form-control > .form-control {
+    font-size: 0.9rem;
+    font-family: $font;
+  }
+
+  button#datepicker {
+    padding-left: 1px;
+    padding-right: 5px;
+  }
+ }
+
+/* Utils */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.mb3 {
+  margin-bottom: 3px;
+}
+
+.modal-subtitle {
+  width: 100px;
+}

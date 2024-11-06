@@ -1,0 +1,73 @@
+.card {
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  background-color: $white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+  &-header {
+    background-color: $white;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 1.3rem;
+      color: $black;
+      font-family: $fontBook;
+    }
+
+    svg {
+      font-size: 1.2rem;
+    }
+  }
+
+  &-body {
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
+  &__value {
+    min-width: 140px;
+    text-align: end;
+    padding-right: 5px;
+  }
+
+  &__totalline {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 214px;
+      right: 0px;
+      bottom: -10px;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  &-footer {
+    background-color: $white;
+    display: flex;
+  }
+
+  &--product {
+    .card-header {
+      p {
+        font-size: 1rem;
+      }
+
+      svg {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &--graph {
+    width: 95%;
+    padding: 15px 15px 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

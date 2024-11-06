@@ -1,0 +1,123 @@
+.l-login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //background-image: url('../../assets/images/background-login.webp');
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 0.3;
+  }
+}
+
+.l-title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 5px 20px 10px;
+  min-height: 55px;
+  position: relative;
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .back-arrow {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+  }
+
+  .button-rounded {
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+  }
+
+  &-back {
+    padding-left: 50px;
+  }
+}
+
+.l-content {
+  height: calc(100vh - 128px);
+  position: relative;
+  margin: auto;
+  margin-top: 0;
+  padding-top: 14px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: $white;
+
+  &--blue {
+    background-color: $background-blue;
+  }
+
+  &--period {
+    margin-top: 27px;
+    height: calc(100vh - 156px);
+
+    .m-select-period {
+      svg, p {
+        color: $white;
+      }
+    }
+
+    .l-list {
+      height: calc(100vh - 170px);
+    }
+  }
+}
+
+.l-list {
+  overflow-y: auto;
+  height: calc(100vh - 142px);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 70px ;
+
+  &--period {
+    padding-top: 35px;
+  }
+
+  &--form {
+    position: relative;
+    padding-bottom: 70px;
+
+    .button-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+  }
+}
+
+.l-all-content {
+  height: calc(100vh - 74px);
+  background-color: $background-blue;
+}
+
+.l-button {
+  height: 60px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.l-title-graph {
+  background-color: $white;
+  padding: 20px 20px 1px;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}

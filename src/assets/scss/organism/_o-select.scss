@@ -1,0 +1,25 @@
+.o-select {
+  position: absolute;
+  background: white;
+  z-index: 2;
+  width: 90%;
+  height: 120px;
+  overflow-y: auto;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 5px;
+  padding-top: 6px;
+  top: 33px;
+
+  &__item {
+    padding: 10px;
+    &:hover {
+      background-color: $border-color;
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    min-height: 25px;
+    color: $light-text;
+  }
+}

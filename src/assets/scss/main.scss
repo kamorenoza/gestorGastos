@@ -1,0 +1,84 @@
+/* Variables */
+$shadow: #ddd;
+$borders: rgba(0,0,0,.125);
+$light-text: #757575;
+$white: #fff;
+$black: #000;
+$salmon: #bd6a70;
+$lila: #ccbbce;
+$turqoise: #00abb5;
+$dark-turqoise: #00abb5;
+$blue: #03397a;
+$purple: #6515dd;
+$background-gray: #f1f2f2;
+$border-color: #dee2e6;
+
+$color-success: #4caf50;
+$color-danger: #d51212;
+$color-warning: #f97808;
+
+$color-secondary-dark: #bd6a70;
+$color-secondary: #ccbbce;
+$color-general: $purple;
+$color-tertiary: $turqoise;
+
+$background-color-general: #f6f2fc;
+$background-color-tertiary: rgba($color-tertiary, 0.1);
+$background-color-secondary: rgba($color-secondary-dark, 0.1);
+$background-blue: #EDF3FB;
+
+$font: 'Cerebri', serif;
+$fontBook: 'CerebriBook', serif;
+$fontBold: 'CerebriBold', serif;
+
+/* Fonts */
+@font-face {
+  font-family: 'Cerebri';
+  src: url('@/assets/fonts/MavenProRegular.ttf');
+  src: url('@/assets/fonts/MavenProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CerebriBook';
+  src: url('@/assets/fonts/MavenProMedium.ttf');
+  src: url('@/assets/fonts/MavenProMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CerebriBold';
+  src: url('@/assets/fonts/MavenProBold.ttf');
+  src: url('@/assets/fonts/MavenProBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General */
+@import '@/assets/scss/_general.scss';
+@import '@/assets/scss/_theme.scss';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+
+/* Layouts */
+@import '@/assets/scss/_l-layout.scss';
+
+/* Organims */
+@import '@/assets/scss/organism/_o-menu.scss';
+@import '@/assets/scss/organism/_o-navbar.scss';
+@import '@/assets/scss/organism/_o-table.scss';
+@import '@/assets/scss/organism/_o-card.scss';
+@import '@/assets/scss/organism/_o-select.scss';
+
+/* Molecules */
+@import '@/assets/scss/molecules/_m-select-period.scss';
+@import '@/assets/scss/molecules/_m-summary.scss';
+@import '@/assets/scss/molecules/_m-action.scss';
+@import '@/assets/scss/molecules/_m-tabs.scss';
+@import '@/assets/scss/molecules/_m-label.scss';
+
+/* Atoms */
+@import '@/assets/scss/atoms/_buttons.scss';
+@import '@/assets/scss/atoms/_icons.scss';
+@import '@/assets/scss/atoms/_inputs.scss';

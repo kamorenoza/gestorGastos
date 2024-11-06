@@ -1,0 +1,25 @@
+input.form-control {
+  border: 0;
+  border-bottom: 1px solid $border-color;
+  border-radius: 0;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  font-size: 0.9rem;
+  outline: none;
+
+  &:focus {
+    border-color: $light-text;
+    box-shadow: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

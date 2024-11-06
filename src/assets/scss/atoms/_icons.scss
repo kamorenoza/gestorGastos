@@ -1,0 +1,100 @@
+.icon-button {
+  cursor: pointer;
+
+  svg {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.6rem;
+  }
+}
+
+.icon-category {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i, svg {
+    line-height: 1rem;
+    font-size: 1rem;
+  }
+
+  &--big {
+    width: 60px;
+    height: 60px;
+
+    i, svg {
+      line-height: 2rem;
+      font-size: 2rem;
+    }
+  }
+
+  &--small {
+    width: 27px;
+    height: 27px;
+
+    i, svg {
+      line-height: 13px;
+      font-size: 17px;
+    }
+  }
+}
+
+.custom-switch {
+  .custom-control-label {
+    &:before {
+      border-color: $light-text;
+      cursor: pointer;
+      top: 0;
+    }
+
+    &:after {
+      background-color: $light-text;
+      cursor: pointer;
+      top: 2px;
+    }
+  }
+
+  .custom-control-input {
+    &:checked {
+      & ~ .custom-control-label {
+        &:before {
+          background-color: $color-general;
+          border-color: $color-general;
+        }
+      }
+    }
+
+    &:focus {
+      & ~ .custom-control-label {
+        &:before {
+          box-shadow: none;
+          border-color: $light-text;
+        }
+      }
+    }
+
+    &[disabled] {
+      & ~ .custom-control-label {
+        &:before {
+          border-color: $border-color;
+          background-color: $white;
+          cursor: auto;
+        }
+    
+        &:after {
+          background-color: $border-color;
+          cursor: auto;
+        }
+      }
+    }
+
+    &:disabled:checked ~ .custom-control-label::before {
+      background-color: rgba($color-general, 0.5);
+    }
+  }
+}

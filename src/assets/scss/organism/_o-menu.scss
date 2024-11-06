@@ -1,0 +1,112 @@
+.o-menu {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  height: 74px;
+  width: 100%;
+  background-color: $white;
+  position: fixed;
+  bottom: 0;
+  z-index: 99999;
+  border-top: 1px solid $border-color;
+  min-width: 375px;
+  max-width: 800px;
+
+  .menu-item {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-width: 53px;
+
+    a {
+      text-align: center;
+      color: $light-text;
+      &:hover { text-decoration: none; }
+    }
+
+    svg {
+      font-size: 1.2rem;
+      margin: auto;
+    }
+
+    p {
+      font-size: 0.6rem;
+      line-height: 0.6rem;
+      margin-top: 2px;
+    }
+
+    &:hover {
+      a {
+        color: rgba($color-general, 0.7);
+      }
+
+      a.selected {
+        color: $color-general;
+      }
+    }
+
+    & .selected {
+      color: $color-general;
+    }
+  }
+
+  .menu-item-main {
+    width: 35px;
+    position: relative;
+
+    .button {
+      position: absolute;
+      background-color: $color-general;
+      top: -12px;
+      color: $white;
+      border-radius: 50%;
+      height: 54px;
+      width: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      line-height: 1.7rem;
+      border: none;
+      left: -5px;
+    }
+
+    &__container {
+      position: absolute;
+      width: 150px;
+      height: 66px;
+      top: -90px;
+      left: -53px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .title-menu {
+    color: $color-general;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-family: $fontBold;
+  }
+
+  .b-sidebar-header {
+    padding-bottom: 0;
+  }
+
+  .menu-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 0;
+    color: $light-text;
+    border-top: 1px solid $border-color;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

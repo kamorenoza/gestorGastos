@@ -1,0 +1,8 @@
+.o-navbar {
+  color: $white;
+  font-family: $fontBook;
+  
+  &.navbar-dark .navbar-nav .nav-link {
+    color: $white;
+  }
+}
